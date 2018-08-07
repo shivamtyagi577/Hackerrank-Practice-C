@@ -1,0 +1,38 @@
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int t,n,k,i,j,count=0;
+    scanf("%d",&t);
+    for(i=0;i<t;i++)
+    {
+        scanf("%d%d",&n,&k);
+        int a[n];
+        for(j=0;j<n;j++)
+        {
+          scanf("%d",&a[j]);
+            if(a[j]<=0)
+            {
+                count++;
+            }
+        }
+       // printf("%d\n",count);
+        if(k>count)
+        {
+            printf("YES\n");
+        }
+        if(k<=count)
+        {
+            printf("NO\n");
+        }
+        count=0;
+    }
+}
