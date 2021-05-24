@@ -1,3 +1,3 @@
-# Hackerrank-Practice-C
+# Hackerrank-Problem Solving
 Repository for C Programs from hackerrank
 
